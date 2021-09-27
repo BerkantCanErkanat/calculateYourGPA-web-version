@@ -1,0 +1,28 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.bg-color {
+    background-color: rgb(188, 223, 240);
+}
+.small-margin {
+    margin: .9rem;
+}
+.ders-margin {
+    margin: .5rem;
+}
+.genel-div{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    margin: .4rem;
+    border-right: 1px solid white;
+    padding: .2rem;
+}
+.hover:hover{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}

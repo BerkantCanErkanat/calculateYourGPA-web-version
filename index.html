@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Your GPA</title>
+    <meta name="keywords" content="GPA YANO">
+    <meta name="description" content="Calculate Your GPA or Semester Total Grade">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="main.css">
+
+    <!--Tablet: sadece 768px altına dusunce bu css etkin olucak-->
+    <link rel="stylesheet" media = "(max-width:768px)" href="tablet.css">
+
+    <!--Mobile: sadece sayfa 500px altına dusunce bu css etkin hale gelsin dedik-->
+    <link rel="stylesheet" media = "(max-width:500px)" href="mobile.css">
+
+    <!--iphone 5/se-->
+    <link rel="stylesheet" media = "(max-width:400px)" href="iphone5-se.css">
+</head>
+<body class="bg-color">
+    <div class="container">
+        <div class="genel-div">
+            <!--radio buttons-->
+            <div class="type_of_calc small-margin hover" id="sadece-donem-div">
+                <input type="radio" name="type_of_calc" value="sadece_donem" id="sadece_donem" class="radioButton" checked>
+                <label for="sadece_donem">Sadece Donem Ortalamasını Hesapla</label>
+            </div>
+            <div class="type_of_calc small-margin hover" id="hepsi-div">
+                <input type="radio" name="type_of_calc" value="hepsi" id="hepsi" class="radioButton">
+                <label for="hepsi">Hem Donem Hem de Genel Ortalamayı Hesapla</label>
+            </div>
+            <!--onceki ortalama bilgileri-->
+            <div class="eski-inputs" style="display: none;">
+                <div class="eski_input small-margin">
+                    <label for="eski_kredi_sayisi">Onceden Aldıgınız Kredi Sayısı | ÖRN:130</label>
+                    <input type="number" name="eski_kredi_sayisi" id="eski_kredi_sayisi">
+                </div>
+                <div class="eski_input small-margin">
+                    <label for="eski_ort">Eski Ortalamanız | ÖRN:2.85</label>
+                    <input type="number" name="eski_ort" id="eski_ort">
+                </div>
+            </div>
+            <div class="ders_sayisi_combo_box small-margin">
+                <label for="ders_sayisi">Bu donem Aldıgınız Ders Sayısı</label>
+                <select name="ders_sayisi" id="ders_sayisi">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            <div class="ders_bilgi"></div>
+            <a href="#" class = "hover" id="hesapla">Hesapla</a>
+        </div>
+        <div class="genel-div">
+            <h4 id="donem_ici">Dönem içi not ortalamanız : </h4>
+            <h4 id="genel">Genel not Ortalamanız: </h4>
+        </div>
+    </div>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>

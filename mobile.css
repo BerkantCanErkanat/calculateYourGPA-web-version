@@ -1,0 +1,12 @@
+.container {
+    flex-direction: column;
+    align-items: flex-start;
+}
+.genel-div {
+    width: 100%;
+    border-top: 1px solid white;
+    margin-top: .5rem;
+}
+html {
+    font-size: .8rem;
+}

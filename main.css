@@ -1,0 +1,30 @@
+html {
+    font-family: 'Open Sans';
+}
+.container {
+    display: flex;
+    align-items: center;
+    margin: .5rem;
+}
+/*eski input*/
+.eski_input input{
+     width: 5rem;
+     padding: .2rem;
+     border-radius: 10px;
+     margin-left: .4rem;
+}
+input:focus{
+    outline: none;
+}
+/*eklenen dersler*/
+.grade {
+    margin-left: .4rem;
+}
+
+/*Hesapla butonu*/
+#hesapla {
+    text-decoration: none;
+    color: black;
+    padding: .25rem;
+    margin: .25rem;
+}
